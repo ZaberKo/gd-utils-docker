@@ -15,10 +15,10 @@ RUN git clone https://github.com/iwestlin/gd-utils \
 
 
 
-RUN echo "gdcopy(){ \
+RUN echo 'gdcopy(){ \
     node --max-old-space-size=4096 /gd-utils/copy "$1" -S \
 } \
 \
 gdcount(){ \
     node --max-old-space-size=4096 /gd-utils/count "$1" -S \
-}" >> ~/.bashrc
+}' >> ~/.bashrc
